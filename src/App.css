@@ -1,0 +1,131 @@
+
+.header, .appointment-header{
+  position:relative;
+  background-image: url(./images/Mask\ Group\ 2.png);
+  background-size: cover;
+  z-index: 1;
+}
+.header::after{
+  height:100%;
+  content:' ';
+  position: absolute;
+  top: 0;
+  width: 31%;
+  right: 0;
+  background-color: #3a4256;
+  z-index: -1;
+}
+
+/* this css for button  */
+.button {
+  background-image: linear-gradient(to right, #18d2b2, #0fcfe8);
+  border: none;
+  padding: 9px 30px;
+  transition: all 0.5s;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* end here button style */
+.infoCard{
+  position: relative;
+  top: 50px;
+}
+.services img{
+  height: 160px;
+  padding: 40px;
+}
+.appointment{
+  margin-top: 150px;
+  height: 400px;
+  background-image: url(./images/Mask\ Group\ 4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  position: relative;
+}
+.appointment::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(14, 15, 26);
+  opacity: .9;
+  top: 0;
+}
+.appointment img{
+  height: 550px;
+  transform: translateY(-150px);
+}
+.testimonial{
+  background-image: url(./images/quote.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: right top;
+  position: relative;
+}
+/* .blog-card:hover{
+  background-image: linear-gradient(to right, #0aaa8f, #0fcfe8);
+} */
+.blog-card:hover{
+  background-image: linear-gradient(to right, #0aaa8f, #0fcfe8);
+  color: #fff !important;
+  transition:  .1s  all ease-in-out !important;
+}
+.blog-card:hover .card-data{
+  background-image: url(./images/quote.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 40%;
+}
+.blog-card:hover h6,
+.blog-card:hover p
+{
+  color: #fff !important;
+
+}
+.blog-card:hover img{
+  display: none;
+}
+/* hover */
+.contact-us{
+  background-image: url(./images/Mask\ Group\ 4.png);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.contact-us::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(11, 9, 17);
+  opacity: .9;
+  z-index: -1;
+}
+footer{
+  background-image: url(./images/footer-bg.png);
+  background-size: cover;
+}
